@@ -1,0 +1,134 @@
+{
+    "affiliate-wp": {
+        "name": "AffiliateWP",
+        "url": "https://affiliatewp.com/"
+    },
+    "bb-plugin": {
+        "name": "Beaver Page Builder",
+        "url": "https://www.wpbeaverbuilder.com"
+    },
+    "bbpowerpack": {
+        "name": "PowerPack for Beaver Builder",
+        "url": "https://wpbeaveraddons.com/"
+    },
+    "bsk-pdf-manager-pro": {
+        "name": "BSK PDF Manager Pro",
+        "url": "https://www.bannersky.com/downloads/bsk-pdf-manager-pro/"
+    },
+    "easy-social-share-buttons3": {
+        "name": "Easy Social Share Buttons",
+        "url": "https://socialsharingplugin.com/"
+    },
+    "elementor-pro": {
+        "name": "Eementor PRO",
+        "url": "https://elementor.com/"
+    },
+    "elementskit": {
+        "name": "ElementsKit",
+        "url": "https://wpmet.com/plugin/elementskit/"
+    },
+    "facetwp": {
+        "name": "FacetWP",
+        "url": "https://facetwp.com/"
+    },
+    "fusion-builder": {
+        "name": "Fusion Builder",
+        "url": "https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226"
+    },
+    "fusion-core": {
+        "name": "Fusion Core",
+        "url": "https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226"
+    },
+    "gp-premium": {
+        "name": "GP premium",
+        "url": "https://generatepress.com"
+    },
+    "gravityforms": {
+        "name": "Gravity Forms",
+        "url": "https://www.gravityforms.com/"
+    },
+    "heroic-blocks": {
+        "name": "Heroic Blocks",
+        "url": "https://herothemes.com/support/knowledge-base/heroic-blocks-documentation/"
+    },
+    "ht-knowledge-base": {
+        "name": "Heroic Knowledge Base Plugin",
+        "url": "https://herothemes.com/plugins/heroic-wordpress-knowledge-base/"
+    },
+    "jet-blog": {
+        "name": "JetBlog",
+        "url": "https://crocoblock.com"
+    },
+    "jet-elements": {
+        "name": "https://crocoblock.com/",
+        "url": "JetElements"
+    },
+    "js_composer": {
+        "name": "WPBakery Page Builder",
+        "url": "https://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431"
+    },
+    "LayerSlider": {
+        "name": "LayerSlider Responsive Slider",
+        "url": "https://codecanyon.net/item/kreatura-slider-plugin-for-wordpress/1362246"
+    },
+    "masterslider": {
+        "name": "Master Slider",
+        "url": "https://codecanyon.net/item/master-slider-wordpress-responsive-touch-slider/7467925"
+    },
+    "modern-events-calendar": {
+        "name": "Modern Events Calendar",
+        "url": "https://webnus.net/modern-events-calendar/"
+    },
+    "molongui-authorship-pro": {
+        "name": "Molongui Authorship Pro",
+        "url": "https://www.molongui.com/authorship/"
+    },
+    "perfmatters": {
+        "name": "Perfmatters",
+        "url": "https://perfmatters.io/"
+    },
+    "premium-addons-pro": {
+        "name": "Premium Addons Pro",
+        "url": "https://premiumaddons.com/pro/"
+    },
+    "revslider": {
+        "name": "Slider Revolution",
+        "url": "https://www.sliderrevolution.com/"
+    },
+    "sfwd-lms": {
+        "name": "LearnDash LMS",
+        "url": "https://www.learndash.com/"
+    },
+    "storefront-designer": {
+        "name": "Storefront Designer",
+        "url": "https://docs.woocommerce.com/document/storefront-designer/"
+    },
+    "storefront-parallax-hero": {
+        "name": "Storefront Parallax Hero",
+        "url": "https://woocommerce.com/products/storefront-parallax-hero/"
+    },
+    "superstorefinder-wp": {
+        "name": "Super Store Finder",
+        "url": "https://superstorefinder.net/superstorefinderwp/"
+    },
+    "uncode-core": {
+        "name": "Uncode",
+        "url": "https://themeforest.net/item/uncode-creative-multiuse-wordpress-theme/13373220"
+    },
+    "uncode-js_composer": {
+        "name": "Uncode",
+        "url": "https://themeforest.net/item/uncode-creative-multiuse-wordpress-theme/13373220"
+    },
+    "wp-rocket": {
+        "name": "WP Rocket",
+        "url": "https://wp-rocket.me/"
+    },
+    "wpml-cms-nav": {
+        "name": "WPML CMS Nav",
+        "url": "https://wpml.org/documentation/getting-started-guide/site-navigation/"
+    },
+    "wpml-translation-management": {
+        "name": "Translation Management",
+        "url": "https://wpml.org/documentation/translating-your-contents/"
+    }
+}
