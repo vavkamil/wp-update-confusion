@@ -1,7 +1,4 @@
 # wp-update-confusion
-WordPress Plugin Update Confusion
-
----
 
 Simple tool to detect websites vulnerable to a novel supply chain attack targeting unclaimed WordPress plugins.
 
