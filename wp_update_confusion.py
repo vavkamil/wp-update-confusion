@@ -71,10 +71,7 @@ def detect_plugins(url):
     }
 
     try:
-        res = requests.get(
-            url,
-            headers=headers,
-        )
+        res = requests.get(url, headers=headers, timeout=5)
     except:
         return 0
 
@@ -121,9 +118,10 @@ def check_wordpress_org_plugin(plugin):
 
     return is_vulnerable
 
+
 def check_paid_plugins(plugin):
     f = open("paid_plugins.json")
- 
+
     paid_plugins = json.load(f)
 
     f.close()
@@ -132,6 +130,7 @@ def check_paid_plugins(plugin):
         return 1
     else:
         return 0
+
 
 def check_active_installs(plugin):
     headers = {
@@ -145,10 +144,11 @@ def check_active_installs(plugin):
 
     downloads = res.json()["all_time"]
 
-    if(downloads and int(downloads) > 100):
+    if downloads and int(downloads) > 100:
         return 0
     else:
         return 1
+
 
 def is_allowed_slug(plugin):
     # https://meta.trac.wordpress.org/ticket/5868
@@ -282,7 +282,7 @@ def is_allowed_slug(plugin):
         return 0
 
     # Prevent short plugin names (they're generally SEO grabs).
-    if(len(plugin) < 5):
+    if len(plugin) < 5:
         return 0
 
     # Check if forbidden slug
@@ -302,6 +302,7 @@ def is_allowed_slug(plugin):
 
     return 1
 
+
 def main(args):
 
     urls = []
@@ -312,7 +313,7 @@ def main(args):
 
     if args.list:
         with open(args.list) as file:
-            while (url := file.readline().rstrip()):
+            while (url := file.readline().rstrip()) :
                 urls.append(url)
     else:
         urls.append(args.url)
@@ -346,7 +347,7 @@ def main(args):
                 print(f"[i] Found WP plugin: {plugin}")
 
                 is_allowed = is_allowed_slug(plugin)
-                if not(is_allowed):
+                if not (is_allowed):
                     print(f"\t[i] Not vulnerable - disallowed name\n")
                     continue
 
@@ -365,7 +366,7 @@ def main(args):
                 is_vulnerable = check_wordpress_org_plugin(plugin)
                 if is_vulnerable:
                     is_not_used = check_active_installs(plugin)
-                    if not(is_not_used):
+                    if not (is_not_used):
                         print(f"\t[i] Not vulnerable - heavily used\n")
                         continue
                     print("\t[?] Vulnerable to WP Plugin Confusion attack\n")
@@ -376,7 +377,7 @@ def main(args):
                     print(f"\t[i] Not vulnerable - already claimed\n")
 
         if args.output:
-            if(vulnerable):
+            if vulnerable:
                 with open(args.output, "a") as f:
                     for item in vulnerable:
                         f.write("%s\n" % item)
