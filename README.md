@@ -59,3 +59,31 @@ $ python wp_update_confusion.py -p -u https://eng.*REDACTED*.com
 [i] Found WP plugin: solvmedias
 	[i] Not vulnerable - already claimed
 ```
+
+## Nuclei template
+
+The nuclei engine has its limitations, but with some pipe hacks and `jq`, one can scan a list of targets. It will result in a ton of false positives but will be much faster. See the [template](wp-update-confusion.yaml) and usage:
+
+```
+$ chaos -d u**r.com -bbq -http-url --silent | nuclei -t wp-update-confusion.yaml -json | jq -r '"https://plugins.svn.wordpress.org/" + .["extracted-results"][] + "/?" + .["matched-at"]' | httpx -silent -random-agent -mc 404
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   2.5.3
+
+		projectdiscovery.io
+
+[WRN] Use with caution. You are responsible for your actions.
+[WRN] Developers assume no liability and are not responsible for any misuse or damage.
+[INF] Using Nuclei Engine 2.5.3 (latest)
+[INF] Using Nuclei Templates 8.6.1 (latest)
+[INF] Using Interactsh Server https://interactsh.com
+[INF] Templates added in last update: 44
+[INF] Templates loaded for scan: 1
+https://plugins.svn.wordpress.org/td-standard-pack/?https://eng.u**r.com/
+https://plugins.svn.wordpress.org/u**r-eng-regional-plugins/?https://eng.u**r.com/
+https://plugins.svn.wordpress.org/td-cloud-library/?https://eng.u**r.com/
+https://plugins.svn.wordpress.org/search-filter-pro/?https://eng.u**r.com/
+```
