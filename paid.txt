@@ -134,3 +134,6 @@ yith-woocommerce-uploads-premium
 yith-woocommerce-waiting-list-premium
 youtube-embed-plus-pro
 youtube-feed-pro
+miniorange-saml-20-multisite-mu-domain-mapping
+ie-sitemode
+validity-modules
