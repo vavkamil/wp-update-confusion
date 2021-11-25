@@ -6,7 +6,6 @@ Read more:
 - [https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/](https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/)
 - [https://galnagli.com/Wordpress_Plugin_Update_Confusion/](https://galnagli.com/Wordpress_Plugin_Update_Confusion/)
 
-
 ## Usage
 
 ```bash
@@ -91,4 +90,13 @@ https://plugins.svn.wordpress.org/td-standard-pack/?https://eng.u**r.com/
 https://plugins.svn.wordpress.org/u**r-eng-regional-plugins/?https://eng.u**r.com/
 https://plugins.svn.wordpress.org/td-cloud-library/?https://eng.u**r.com/
 https://plugins.svn.wordpress.org/search-filter-pro/?https://eng.u**r.com/
+```
+
+
+## False Positives
+
+```
+- ie-sitemode
+- miniorange
+- Everything with -pro appended
 ```
