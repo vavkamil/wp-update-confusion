@@ -2,6 +2,11 @@
 
 Simple tool to detect websites vulnerable to a novel supply chain attack targeting unclaimed WordPress plugins.
 
+Read more:
+- [https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/](https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/)
+- [https://galnagli.com/Wordpress_Plugin_Update_Confusion/](https://galnagli.com/Wordpress_Plugin_Update_Confusion/)
+
+
 ## Usage
 
 ```bash
