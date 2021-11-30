@@ -3,8 +3,10 @@
 Simple tool to detect websites vulnerable to a novel supply chain attack targeting unclaimed WordPress plugins.
 
 Read more:
+- [**Please don’t ‘test’ submitting other people’s plugins.**](https://make.wordpress.org/plugins/2021/11/29/please-dont-test-submitting-other-peoples-plugins/)
 - [https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/](https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/)
 - [https://galnagli.com/Wordpress_Plugin_Update_Confusion/](https://galnagli.com/Wordpress_Plugin_Update_Confusion/)
+- [CVE-2021-44223](https://nvd.nist.gov/vuln/detail/CVE-2021-44223)
 
 ## Usage
 
